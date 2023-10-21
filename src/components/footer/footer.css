@@ -1,0 +1,15 @@
+#footer{
+    background-color: rgb(34, 34, 34);
+    color: #ffffff;
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 1rem;
+    bottom: 0;
+    max-width: 75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: rgba(53, 53, 53, 0.25) 0px -70px 36px -23px inset;
+
+}

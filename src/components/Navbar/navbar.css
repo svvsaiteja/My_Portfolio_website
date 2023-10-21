@@ -1,0 +1,105 @@
+
+
+.navbar{
+    box-shadow: rgba(184, 184, 184, 0.35) 0px -70px 36px -23px inset;
+    background: #000000;
+    height: 6rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    
+}
+
+.logo{
+    object-fit: contain;
+    height: 5rem;
+    width: 5rem; ;
+}
+
+.desktopMenuListItem{
+    margin: 1rem;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.desktopMenuListItem:hover{
+    color: aqua;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid aqua;
+}
+
+/* .desktopMenuBtn{
+    background: white;
+    color:black;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.7rem;
+    border-radius: 2rem;
+    width: max-content;
+}
+.desktopMenuImg{
+    object-fit:cover;
+    height: 1.6rem;
+    width: 1.6rem;
+    padding: 4px;
+} */
+
+.active{
+    color: aqua;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid aqua;
+}
+
+.mobMenu{
+    display: none;
+    object-fit: cover;
+    height: 5rem;
+}
+
+.navMenu{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background-color: rgb(40, 40, 40);
+    border-radius: 1rem;
+}
+
+.listItem{
+    color: white;
+    padding: 0.5rem 3rem;
+    text-decoration: none;
+    margin: 0.25rem;
+    background: rgb(30,30,30);
+}
+
+@media screen and (max-width: 768px) {
+    .desktopMenuListItem{
+        display: none;
+    }
+    .mobMenu{
+        display: flex;
+    }
+    .navMenu{
+        top: 6rem;
+        right: 1rem;
+    }
+    .listItem{
+        padding: 0.5rem 1rem;
+    }
+    
+}

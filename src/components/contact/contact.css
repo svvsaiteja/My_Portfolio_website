@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+#contactPage{
+    min-height: calc(70vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(201, 201, 201, 0.25) 0px 30px 60px -12px inset, rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;
+    background-color:  #313131;
+
+}
+
+
+
+.contactDesc{
+     padding:0 1rem;
+    max-width: 50rem;
+    padding-bottom: 1.5rem;
+}
+
+.contactForm{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+
+}
+
+
+.name, .email, .msg{
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(40,40,40);
+    box-shadow: rgba(35, 35, 35, 0.25) 0px 30px 60px -12px inset, rgba(94, 94, 94, 0.3) 0px 18px 36px -18px inset;
+
+    
+}
+
+.submitBtn{
+    background: white;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    padding: 0.75rem 3.5rem;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+
+  .social-icons {
+    display: flex;
+
+    .social {
+      position: relative;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 20pt;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(66, 63, 63);
+      background-color: radial-gradient(from 50% 60%, white, #f6f6f6);
+      box-shadow: 0 10px 10px rgba(black, 0.2), 0 -6px 10px rgba(white, 0.6);
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+
+      &.linkedIn,
+      &.discord,
+      &.instagram,
+      &.github,
+      &.gmail,
+      &.tiktok {
+        transition: background-color 0.2s ease;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        &.linkedIn,
+        &.linkedIn .tooltip,
+        &.linkedIn .tooltip:after {
+          background-color: #0072b1;
+        }
+
+        &.discord,
+        &.discord .tooltip,
+        &.discord .tooltip:after {
+          background-color: #5865f2;
+        }
+
+        &.instagram,
+        &.instagram .tooltip,
+        &.instagram .tooltip:after {
+          background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+          ;
+        }
+
+        &.github,
+        &.github .tooltip,
+        &.github .tooltip:after {
+          background-color: #333333;
+        }
+
+        &.gmail,
+        &.gmail .tooltip,
+        &.gmail .tooltip:after {
+          background-color: #c542f5;
+        }
+
+        &.tiktok,
+        &.tiktok .tooltip,
+        &.tiktok .tooltip:after {
+          background-color: black;
+        }
+
+        .tooltip {
+          transform: translate(-50%, -250%);
+          opacity: 1;
+        }
+
+        .icon {
+          background: linear-gradient(
+            to bottom,
+            rgba(white, 0.7),
+            rgba(white, 1)
+          );
+          -webkit-background-clip: text;
+        }
+      }
+
+      .tooltip {
+        font-family: "Poppins", sans-serif;
+        font-size: 10pt;
+        font-weight: 900;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        opacity: 0;
+        padding: 0.2em 0.4em;
+        transition: 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        border-radius: 2px;
+
+        &:after {
+          content: "";
+          display: block;
+          width: 6px;
+          height: 6px;
+          transform-origin: center;
+          transform: translate(-50%, -50%) rotate(45deg);
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          z-index: -1;
+        }
+      }
+
+      .icons {
+        height: 1em;
+        display: flex;
+        align-items: center;
+        /* color: white !important; */
+        transition: 0.2s ease;
+
+      }
+    }
+  }
+}
+
+
